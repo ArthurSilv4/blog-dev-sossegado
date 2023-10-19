@@ -6,7 +6,15 @@ export default function Home() {
   const posts = getAllPosts();
 
   return (
-    <main>
+    <main className="flex flex-col bg-bgLight dark:bg-bgDark">
+      <div className="m-auto">
+        <h1 className=" text-3xl font-bold underline decoration-1">
+          Ultimas Atualizaçôes
+        </h1>
+      </div>
+
+      <div></div>
+
       {posts.map((post) => (
         <div key={post.metadata.slug}>
           <Link href={`/blog/${post.metadata.slug}`}>

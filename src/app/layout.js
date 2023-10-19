@@ -1,17 +1,27 @@
-import { Inter } from 'next/font/google'
-import './globals.css'
+import { Poppins } from "next/font/google";
+import "./globals.css";
+import { Header } from "../components/header/page";
+import Providers from "./providers";
 
-const inter = Inter({ subsets: ['latin'] })
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
+});
 
 export const metadata = {
-  title: 'Dev Sossegado',
-  description: 'Blog Dev Sossegado',
-}
+  title: "Dev Sossegado",
+  description: "Blog Dev Sossegado",
+};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
-      <body className={inter.className}>{children}</body>
+      <body className={poppins.className}>
+        <Providers>
+          <Header />
+          {children}
+        </Providers>
+      </body>
     </html>
-  )
+  );
 }
