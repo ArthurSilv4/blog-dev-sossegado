@@ -17,7 +17,6 @@ export default function postSlug({ params }) {
   return (
     <main>
       <span>{filteredPost.metadata.date}</span>
-      <div dangerouslySetInnerHTML={{ __html: filteredPost.content }} />
     </main>
   );
 }
