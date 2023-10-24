@@ -6,17 +6,17 @@ export function SocialMedia() {
     {
       name: "Linkedin",
       icon: "/icons/linkedin.svg",
-      link: "",
+      link: "https://www.linkedin.com/in/arthur-souza-dev/",
     },
     {
       name: "GitHub",
       icon: "/icons/gitHub.svg",
-      link: "",
+      link: "https://github.com/ArthurSilv4",
     },
     {
       name: "Portfólio",
       icon: "/icons/portfolio.svg",
-      link: "",
+      link: "https://portfolio-arthur-souza.vercel.app/",
     },
   ];
 
