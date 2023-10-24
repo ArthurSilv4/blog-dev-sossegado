@@ -4,10 +4,10 @@ import remarkHtml from 'remark-html'
 import { remark } from 'remark'
 
 export function getAllPosts() {
-  const allPostsFileNames = fs.readdirSync('./src/posts')
+  const allPostsFileNames = fs.readdirSync('public/posts')
 
   const posts = allPostsFileNames.map((filename) => {
-    const fileContent = fs.readFileSync(`./src/posts/${filename}`, 'utf-8')
+    const fileContent = fs.readFileSync(`public/posts/${filename}`, 'utf-8')
     const { content, data: metadata } = grayMatter(fileContent)
     const htmlContent = remark().use(remarkHtml).processSync(content).toString()
 

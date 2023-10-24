@@ -1,6 +1,8 @@
 ---
   date: '20/10/2004'
   author: 'Arthur De Souza'
+  imgAuthor: '/imgs/eu.png' 
+  linkAuthor: 'https://www.linkedin.com/in/arthur-souza-dev/'
 
   tag: 'Aprenda'
   title: 'Desbravando o WSL: Instalação Simplificada e Rápida.'
