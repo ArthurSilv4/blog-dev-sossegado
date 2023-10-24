@@ -19,7 +19,7 @@ export default function Home() {
           {posts.map((post) => (
             <div key={post.metadata.slug} className="flex gap-10 pb-10">
               <div className="max-w-[300px] ">
-                <Link href={`/blog/${post.metadata.slug}`}>
+                <Link href={`/${post.metadata.slug}`}>
                   <Image
                     src={post.metadata.imageUrl}
                     height={1000}
@@ -32,7 +32,7 @@ export default function Home() {
                     {post.metadata.tag}
                   </span>
                   <Link
-                    href={`/blog/${post.metadata.slug}`}
+                    href={`/${post.metadata.slug}`}
                     className="uppercase text-3xl font-bold font-serif"
                   >
                     {post.metadata.title}
