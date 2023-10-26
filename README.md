@@ -9,11 +9,11 @@ O objetivo do projeto foi criar um leitor de Markdown que converta para HTML, si
 
 # Layout Página Inicial
 
-![Layout](/github/Mackups.png) 
+[![Layout Página Inicial](/github/Mackups.png)](/github/BlogDevSossegado.mp4)
 
 # Layout Página Do Post
 
-![Layout](/github/PagePost.png) 
+![Layout Página Do Post](/github/PagePost.png) 
 
 # Tecnologias utilizadas
 
